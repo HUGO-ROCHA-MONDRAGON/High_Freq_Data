@@ -1,6 +1,3 @@
-# Data files (too large for GitHub, download from challengedata.ens.fr)
-data/*.csv
-
 # Python
 __pycache__/
 *.pyc
