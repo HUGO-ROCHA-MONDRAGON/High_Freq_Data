@@ -1,4 +1,24 @@
 # Python
 __pycache__/
 *.pyc
+*.pyo
+*.egg-info/
 .venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Cours (PDFs externes)
+cours_ml/
+
+# Output
+output/*.csv

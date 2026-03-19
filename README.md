@@ -20,19 +20,19 @@ Les données incluent chaque mise à jour atomique du carnet d'ordres agrégé (
 ```
 High_Freq_Data/
 ├── README.md                          # Ce fichier
+├── requirements.txt                   # Dépendances Python
 ├── docs/
-│   └── challenge_documentation.md     # Documentation détaillée du challenge
-├── cours_ml/                          # Cours de Machine Learning
-│   ├── Chap_0_Introduction.pdf
-│   ├── Chap_1_Foundations_of_ML.pdf
-│   ├── Chap_2_Clustering.pdf
-│   ├── Chap_3_Decision_Trees.pdf
-│   ├── Chap_4_Ensemble_Methods.pdf
-│   ├── Chap_5_Interpretable_ML.pdf
-│   ├── Chap_S1_Support_Vector_Machine.pdf
-│   ├── Chap_S2_Deep_Learning.pdf
-│   └── Chap_S3_IA_and_Ethics.pdf
-└── ...
+│   ├── challenge_documentation.md     # Documentation détaillée du challenge
+│   └── Projet_ML.pdf                  # Sujet du projet (M2 IEF 2025/2026)
+├── src/
+│   └── Mannai(RochaMondragon)_HighFreqData.ipynb  # Notebook principal
+├── data/                              # Données du challenge (Git LFS)
+│   ├── X_train_N1UvY30.csv
+│   ├── X_test_m4HAPAP.csv
+│   └── y_train_or6m3Ta.csv
+├── output/                            # Prédictions et soumissions
+│   └── y_pred_submission.csv          # Fichier de soumission généré
+└── cours_ml/                          # Cours de Machine Learning (non versionné)
 ```
 
 ## 📊 Description des Données
@@ -115,14 +115,30 @@ Chaque observation est transformée en un tenseur de forme **(100, 30)** :
 git clone https://github.com/HUGO-ROCHA-MONDRAGON/High_Freq_Data.git
 cd High_Freq_Data
 
+# Installer les dépendances
+pip install -r requirements.txt
+
 # Télécharger les données depuis le site du challenge
 # https://challengedata.ens.fr/participants/challenges/146/
+# et les placer dans data/
 
-# Installer les dépendances (selon votre approche)
-pip install numpy pandas scikit-learn torch  # PyTorch
-# ou
-pip install numpy pandas scikit-learn jax optax flax  # JAX (comme le benchmark)
+# Lancer le notebook
+jupyter notebook src/Mannai\(RochaMondragon\)_HighFreqData.ipynb
 ```
+
+## 📓 Notebook
+
+Le notebook `src/Mannai(RochaMondragon)_HighFreqData.ipynb` couvre les étapes suivantes :
+
+1. Présentation de la problématique
+2. Chargement et décomposition des données (train/validation/test)
+3. Feature engineering & statistiques descriptives
+4. Modèle de référence — Arbre de Décision
+5. Modèle non supervisé — KMeans (k=24) + méthode du coude + visualisation PCA
+6. Modèle supervisé — Random Forest + SVM (RBF) + Grid Search + validation croisée
+7. Interprétation — Feature Importance + SHAP
+8. Deuxième méthode ensembliste — Gradient Boosting
+9. Comparaison des modèles & génération du fichier de soumission
 
 ## 👥 Équipe
 
