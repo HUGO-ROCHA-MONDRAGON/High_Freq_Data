@@ -140,6 +140,21 @@ Le notebook `src/Mannai(RochaMondragon)_HighFreqData.ipynb` couvre les étapes s
 8. Deuxième méthode ensembliste — Gradient Boosting
 9. Comparaison des modèles & génération du fichier de soumission
 
+## 📈 Résultats Actuels (validation)
+
+| Modèle | Val Accuracy |
+|--------|--------------|
+| Decision Tree | 0.3253 |
+| Random Forest | 0.4361 |
+| Random Forest (Grid Search) | 0.4386 |
+| SVM (RBF) | 0.2744 |
+| Gradient Boosting | **0.4882** |
+| KMeans (alignement optimal) | 0.0485 |
+
+Métriques non supervisées (KMeans) : **ARI = 0.0164**, **NMI = 0.0946**.
+
+Meilleur modèle actuel : **Gradient Boosting**.
+
 ## 👥 Équipe
 
 - Hugo Rocha Mondragon
@@ -150,3 +165,9 @@ Le notebook `src/Mannai(RochaMondragon)_HighFreqData.ipynb` couvre les étapes s
 - [Page du Challenge ENS](https://challengedata.ens.fr/participants/challenges/146/)
 - [Site de CFM](https://www.cfm.fr/)
 - [Documentation détaillée](docs/challenge_documentation.md)
+
+## ✅ TODO (prochaines étapes)
+
+- Vérifier la robustesse (stabilité des scores avec plusieurs seeds et folds).
+- Finaliser l'analyse SHAP (interprétation globale + quelques cas locaux).
+- Générer et valider le fichier de soumission final sur la plateforme ENS.
