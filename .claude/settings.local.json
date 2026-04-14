@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3)",
+      "Bash(python -c ' *)",
+      "Bash(.venv/Scripts/python.exe -c \"import lightgbm; print\\('lgbm ok'\\)\")",
+      "Bash(.venv/Scripts/python.exe -c \"import torch; print\\('torch ok'\\)\")",
+      "Bash(.venv/Scripts/python.exe -c \"import tensorflow; print\\('tf ok'\\)\")",
+      "Bash(.venv/Scripts/python.exe -c \"import sklearn; print\\('sklearn', sklearn.__version__\\)\")",
+      "Bash(.venv/Scripts/pip.exe install *)"
+    ]
+  }
+}
