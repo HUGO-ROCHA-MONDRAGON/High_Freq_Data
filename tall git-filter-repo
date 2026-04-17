@@ -1,0 +1,94 @@
+[33mcommit cedf006304d4bfecffee0c70bfc76e7697310a5a[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: yessinemx <b304juv@groupe.generali.fr>
+Date:   Fri Apr 17 16:18:11 2026 +0200
+
+    update notebook + interpretations + Transformer model for DL
+
+[33mcommit 1bf7181aae0fae070821c4d70a134ddf99dfe7a9[m
+Author: MANNAI Yassine <b304juv@groupe.generali.fr>
+Date:   Fri Apr 17 01:11:51 2026 +0200
+
+    feat: build new features and Bi-GRU model
+
+[33mcommit 1650493cb7ed56753d61284b2889446dd6d46494[m
+Author: Yassine Mannai <menai.yessine@gmail.com>
+Date:   Thu Apr 16 21:19:00 2026 +0200
+
+    quick update
+
+[33mcommit ed81cccf392fecb945f92341492c400c378c7ea8[m
+Author: Yassine Mannai <menai.yessine@gmail.com>
+Date:   Thu Apr 16 21:16:01 2026 +0200
+
+    Add lightGBM
+
+[33mcommit d0e436f492784d364b7cca6a58bd0062d3a7bbc7[m
+Merge: fa6edb0 5e6f3dc
+Author: Yassine Mannai <menai.yessine@gmail.com>
+Date:   Wed Apr 15 01:12:03 2026 +0200
+
+    Merge remote changes & amélioration notebook : deep learning model
+
+[33mcommit fa6edb016446e1a298bdbc382e42746e44a8f0c6[m
+Author: Yassine Mannai <menai.yessine@gmail.com>
+Date:   Wed Apr 15 01:05:08 2026 +0200
+
+    Light GBM + CNN
+
+[33mcommit 5e6f3dc798a8bc1892db04d209f50d40a2b3097e[m
+Author: Hugo <hugosrochamo@gmail.com>
+Date:   Tue Apr 14 23:09:56 2026 +0200
+
+    mise a jour
+
+[33mcommit 89cf0f978c4e37a2ca3075b0f8df8c4dde4d279c[m
+Author: Hugo <hugosrochamo@gmail.com>
+Date:   Sun Mar 22 21:54:15 2026 +0100
+
+    Premiers avancements
+
+[33mcommit 25689d54c3b0eca725f6e38bf18d4d03d98914fd[m
+Author: Yassine Mannai <menai.yessine@gmail.com>
+Date:   Thu Mar 19 13:54:06 2026 +0100
+
+    initial notebook and update readme
+
+[33mcommit 85a4b939c68a939f8bb2c5fd6a47ffff57d66ca0[m
+Author: Yassine Mannai <menai.yessine@gmail.com>
+Date:   Thu Mar 19 13:24:36 2026 +0100
+
+    Add dataset via Git LFS
+    
+    - data/X_train_N1UvY30.csv (1.2 GB) - training features
+    - data/X_test_m4HAPAP.csv (607 MB) - test features
+    - data/y_train_or6m3Ta.csv - training labels
+    - .gitattributes: Git LFS tracking for data/*.csv
+
+[33mcommit 16500e5d6beba7957b7529bd3ae06c2fe6bcbd49[m
+Author: Yassine Mannai <menai.yessine@gmail.com>
+Date:   Thu Mar 19 13:20:38 2026 +0100
+
+    Add project files, .gitignore, and output
+    
+    - .gitignore: exclude large CSV data files (download from challengedata.ens.fr)
+    - Projet_ML.pdf: ML project document
+    - output/y_random_cfm.csv: random baseline submission
+    - Remove generate_pdf.py (no longer needed)
+
+[33mcommit 6372db8d415d4daea412314a2312faa71f121f11[m
+Author: Yassine Mannai <menai.yessine@gmail.com>
+Date:   Thu Mar 19 13:15:18 2026 +0100
+
+    Add README, challenge documentation (MD + PDF) and PDF generator
+    
+    - README.md: project overview, data description, benchmark, getting started
+    - docs/challenge_documentation.md: detailed documentation with math formulas,
+      microstructure concepts, order book dynamics, GRU equations
+    - docs/Challenge_CFM_ENS_2024_Documentation.pdf: PDF version
+    - generate_pdf.py: script to regenerate the PDF
+
+[33mcommit 58438d7dc93779647af09a8c7cb899d570e3fe4e[m
+Author: HUGO-ROCHA-MONDRAGON <hugosrochamo@gmail.com>
+Date:   Thu Mar 19 12:59:42 2026 +0100
+
+    Initial commit: Cours
